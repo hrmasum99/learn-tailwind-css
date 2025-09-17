@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epixelab</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans text-gray-900 bg-white">
+    <!-- Navigation -->
+    <nav class="px-10 md:px-20 lg:px-[135px] py-4 md:py-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="/Logo.svg" alt="Logo of Epixelab" />
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center lg:space-x-8">
+          <a
+            href="#"
+            class="font-abel font-normal text-black hover:text-gray-900 transition-colors"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="font-poppins font-medium text-black hover:text-gray-900 transition-colors"
+            >About Us</a
+          >
+          <a
+            href="#"
+            class="font-poppins font-medium text-black hover:text-gray-900 transition-colors"
+            >Our App</a
+          >
+          <a
+            href="#"
+            class="font-poppins font-medium text-black hover:text-gray-900 transition-colors"
+            >Contacts</a
+          >
+        </div>
+
+        <!-- Auth Buttons -->
+        <div class="hidden lg:flex items-center lg:space-x-5">
+          <button
+            class="font-poppins font-medium text-black hover:text-gray-900 transition-colors"
+          >
+            Log in
+          </button>
+          <button
+            class="bg-orange-500 hover:bg-orange-600 font-poppins font-medium text-white px-7.5 py-3 rounded-lg transition-colors"
+          >
+            Sign up
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="lg:hidden text-gray-700">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="px-10 md:px-20 lg:px-[135px] pt-6 md:pt-12 pb-10 bg-white">
+      <div class="max-w-7xl mx-auto relative">
+        <!-- Hero Image Background - Right Side (Desktop) -->
+        <div
+          class="hidden md:block absolute -right-6 top-1/2 transform -translate-y-1/2 h-80 md:h-96 lg:h-[500px] xl:h-[600px] z-10"
+        >
+          <img
+            src="/main_hero.png"
+            class="object-contain h-80 md:h-96 lg:h-[500px] xl:h-[600px]"
+            alt="Business professional"
+          />
+        </div>
+
+        <!-- Mobile Layout (below md) -->
+        <div class="block md:hidden px-10 sm:px-20">
+          <!-- Image First on Mobile -->
+          <div class="flex items-center justify-center overflow-hidden">
+            <img
+              src="/main_hero.png"
+              class="object-cover"
+              alt="Business professional"
+            />
+          </div>
+
+          <!-- Text Content Below Image on Mobile -->
+          <div class="space-y-6 px-2">
+            <h1
+              class="font-poppins font-black text-2xl sm:text-3xl leading-tight"
+            >
+              We boost growth for your startup business
+            </h1>
+            <p
+              class="font-poppins font-medium text-base sm:text-lg text-black leading-relaxed"
+            >
+              Our goal is top at the heart of creativity services industry as a
+              digital creator. It has a giant community
+            </p>
+            <div
+              class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6"
+            >
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-[10px] font-poppins font-medium transition-colors w-fit"
+              >
+                Get Started
+              </button>
+              <div class="flex items-center space-x-3">
+                <div class="flex items-center gap-6 -space-x-2">
+                  <img src="/Learn_More_icon.svg" alt="Learn More icon" />
+                  <span class="font-abel font-normal">Learn More </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Layout (md and above) -->
+        <div class="hidden md:block relative z-20">
+          <!-- Left Content with Overlap -->
+          <div class="w-[52%] pt-8">
+            <h1
+              class="font-poppins font-black text-4xl/[81px] md:text-5xl lg:text-6xl xl:text-[70px]/[81px] leading-tight"
+            >
+              We boost growth for your statup business
+            </h1>
+            <p
+              class="font-poppins font-medium text-xs md:text-sm lg:text-lg xl:text-[22px] leading-relaxed w-9/10 py-4 md:py-8"
+            >
+              Our goal is top at the heart of creativity services industry as a
+              digital creator. In has a after comment
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6"
+            >
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white px-9 py-3 rounded-[10px] font-poppins font-medium transition-colors"
+              >
+                Get Started
+              </button>
+              <div class="flex items-center space-x-3">
+                <div class="flex items-center gap-6 -space-x-2">
+                  <img src="/Learn_More_icon.svg" alt="Learn More icon" />
+                  <span class="font-abel font-normal">Learn More </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Goal Section -->
+    <section class="px-10 md:px-20 lg:px-[135px] pt-16 md:pt-24 bg-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="flex flex-col items-center gap-4">
+          <h5
+            class="font-abel font-normal tracking-[0.45rem] text-sm text-[#8A898E] mb-0.5"
+          >
+            SERVICE
+          </h5>
+          <h2
+            class="font-abel font-normal text-2xl md:text-3xl lg:text-4xl xl:text-[52px] text-[#0B1B35] mb-27"
+          >
+            Our Vision & Our Goal
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+          <!-- Graphic Design -->
+          <div
+            class="w-full max-w-full border-0 shadow-2xl rounded-[28px] px-10 pb-8"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center mt-8 mb-10"
+            >
+              <img src="/public/Activity.svg" alt="Graphic Design icon" />
+            </div>
+            <h3 class="text-4xl font-abel font-normal text-black">
+              Graphic Design
+            </h3>
+            <p class="font-abel font-normal text-black leading-relaxed py-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
+              laoreet dolor nec imperdiet.
+            </p>
+            <button
+              class="font-poppins font-medium text-lg text-white bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-[10px] transition-colors"
+            >
+              Learn More
+            </button>
+          </div>
+
+          <!-- Video Editing -->
+          <div
+            class="w-full max-w-full border-0 shadow-2xl rounded-[28px] px-10 pb-8"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center mt-8 mb-10"
+            >
+              <img src="/public/Video.svg" alt="Video Editing icon" />
+            </div>
+            <h3 class="font-abel font-normal text-4xl text-black">
+              Video Editing
+            </h3>
+            <p class="font-abel font-normal text-black leading-relaxed py-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
+              laoreet dolor nec imperdiet.
+            </p>
+            <button
+              class="font-poppins font-medium text-lg text-white bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-[10px] transition-colors"
+            >
+              Learn More
+            </button>
+          </div>
+
+          <!-- Digital Marketing -->
+          <div
+            class="w-full max-w-full border-0 shadow-2xl rounded-[28px] px-10 pb-8"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center mt-8 mb-10"
+            >
+              <img src="/public/Chart.svg" alt="Digital Marketing icon" />
+            </div>
+            <h3 class="font-abel font-normal text-4xl text-black">
+              Digital Marketing
+            </h3>
+            <p class="font-abel font-normal text-black leading-relaxed py-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
+              laoreet dolor nec imperdiet.
+            </p>
+            <button
+              class="font-poppins font-medium text-lg text-white bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-[10px] transition-colors"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Components Section -->
+    <section class="px-10 md:px-20 lg:px-[135px] pt-16 md:pt-[142px] bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-12 justify-between">
+          <!-- Left Content -->
+          <div
+            class="w-full md:w-[27%] flex flex-col justify-between gap-8 py-5"
+          >
+            <div class="flex flex-col justify-between gap-8">
+              <h2
+                class="font-dm-sans font-medium text-base md:text-lg lg:text-2xl xl:text-[32px] text-[#1E0E62]"
+              >
+                Many Blocks and Components
+              </h2>
+              <p
+                class="font-dm-sans font-normal text-[10px] md:text-xs lg:text-base text-[#15143966] leading-relaxed"
+              >
+                Startup Framework contains components and complex blocks which
+                can easily be integrated into almost any design.
+              </p>
+            </div>
+            <div>
+              <button
+                class="font-dm-sans font-medium text-base text-[#1E0E62] border-2 border-[#EBEAED] rounded-full hover:text-orange-600 transition-colors px-9 py-3"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Content - Abstract Design -->
+          <div class="rounded-[10px]">
+            <img src="/Photo.png" alt="Components Section image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="px-10 md:px-20 lg:px-[135px] pt-16 md:pt-[142px] bg-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="flex flex-col items-center gap-4">
+          <h5
+            class="font-abel font-normal tracking-[0.45rem] text-sm text-[#8A898E] mb-0.5"
+          >
+            TESTMONIALS
+          </h5>
+          <h2
+            class="font-abel font-normal text-2xl md:text-3xl lg:text-4xl xl:text-[52px] text-[#0B1B35] mb-27"
+          >
+            What Clients say about us
+          </h2>
+        </div>
+
+        <div class="mx-10 md:mx-[100px] grid lg:grid-cols-2 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="p-6">
+            <div class="flex flex-row gap-6">
+              <img
+                src="/Userpic0.png"
+                alt="Userpic"
+                class="h-[70px] w-[70px]"
+              />
+              <div
+                class="flex flex-col justify-between text-start md:min-h-[179px]"
+              >
+                <p
+                  class="font-dm-sans font-medium text-xs md:text-base xl:text-lg/[26px] tracking-[2px] text-[#0B1B35] mb-3.5"
+                >
+                  Get a fully retina ready site when you build with Startup
+                  Framework. Websites look sharper and more gorgeous on devices
+                  with retina display support
+                </p>
+                <div>
+                  <p
+                    class="font-dm-sans font-bold text-sm md:text-base/[28px] text-[#0B1B3566] uppercase"
+                  >
+                    Rayhan Curran
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="p-6">
+            <div class="flex flex-row gap-6">
+              <img
+                src="/Userpic1.png"
+                alt="Userpic"
+                class="h-[70px] w-[70px]"
+              />
+              <div
+                class="flex flex-col justify-between text-start md:min-h-[179px]"
+              >
+                <p
+                  class="font-dm-sans font-medium text-xs md:text-base xl:text-lg/[26px] tracking-[2px] text-[#0B1B35] mb-3.5"
+                >
+                  As a business targeting high net worth individuals, we were
+                  looking for a slick, cool and mini-malistic design for our
+                  website
+                </p>
+                <div>
+                  <p
+                    class="font-dm-sans font-bold text-sm md:text-base/[28px] text-[#0B1B3566] uppercase"
+                  >
+                    Kayley Frame
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="p-6">
+            <div class="flex flex-row gap-6">
+              <img
+                src="/Userpic2.png"
+                alt="Userpic"
+                class="h-[70px] w-[70px]"
+              />
+              <div
+                class="flex flex-col justify-between text-start md:min-h-[179px]"
+              >
+                <p
+                  class="font-dm-sans font-medium text-xs md:text-base xl:text-lg/[26px] tracking-[2px] text-[#0B1B35] mb-3.5"
+                >
+                  The most important part of the Startup Framework is the
+                  samples
+                </p>
+                <div>
+                  <p
+                    class="font-dm-sans font-bold text-sm md:text-base/[28px] text-[#0B1B3566] uppercase"
+                  >
+                    Gene Whitfield
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="p-6">
+            <div class="flex flex-row gap-6">
+              <img
+                src="/Userpic3.png"
+                alt="Userpic"
+                class="h-[70px] w-[70px]"
+              />
+              <div
+                class="flex flex-col justify-between text-start md:min-h-[179px]"
+              >
+                <p
+                  class="font-dm-sans font-medium text-xs md:text-base xl:text-lg/[26px] tracking-[2px] text-[#0B1B35] mb-3.5"
+                >
+                  I’ve built my website with Startup just in one day, and it was
+                  ready-to-go.
+                </p>
+                <div>
+                  <p
+                    class="font-dm-sans font-bold text-sm md:text-base/[28px] text-[#0B1B3566] uppercase"
+                  >
+                    Allan Kim
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="px-10 md:px-20 lg:px-[135px] pt-16 md:pt-[142px] bg-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="flex flex-col items-center gap-4">
+          <h5
+            class="font-abel font-normal tracking-[0.45rem] text-sm text-[#8A898E] mb-0.5"
+          >
+            OUR TEAM
+          </h5>
+          <h2
+            class="font-abel font-normal text-2xl md:text-3xl lg:text-4xl xl:text-[52px] text-[#0B1B35] mb-27"
+          >
+            Meet The Team
+          </h2>
+        </div>
+
+        <div class="grid md:grid-col-2 lg:grid-cols-3 gap-8 md:gap-12">
+          <!-- Team Member 1 -->
+          <div
+            class="border-2 border-[#EBEAED] rounded-lg flex flex-col items-center gap-8 pt-10"
+          >
+            <img
+              src="/member1.jpg"
+              alt="Team member image"
+              class="w-30 h-30 rounded-full"
+            />
+            <div>
+              <h3
+                class="font-dm-sans font-medium text-[22px]/[32px] text-[#1E0E62]"
+              >
+                Vanessa Laird
+              </h3>
+              <p
+                class="font-dm-sans font-bold tracking-[2px] text-base/[26px] text-[#15143966] uppercase pt-3"
+              >
+                UI Designer
+              </p>
+            </div>
+            <div class="w-full h-[60px] flex flex-row">
+              <div
+                class="w-1/3 border-t-2 border-[#EBEAED] rounded-bl-lg"
+              ></div>
+              <div class="w-1/3 border-x-2 border-t-2 border-[#EBEAED]"></div>
+              <div
+                class="w-1/3 border-t-2 border-[#EBEAED] rounded-br-lg"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="border-2 border-[#EBEAED] rounded-lg flex flex-col items-center gap-8 pt-10"
+          >
+            <img
+              src="/member2.jpg"
+              alt="Team member image"
+              class="w-30 h-30 rounded-full"
+            />
+            <div>
+              <h3
+                class="font-dm-sans font-medium text-[22px]/[32px] text-[#1E0E62]"
+              >
+                Mason Campbell
+              </h3>
+              <p
+                class="font-dm-sans font-bold tracking-[2px] text-base/[26px] text-[#15143966] uppercase pt-3"
+              >
+                UI Designer
+              </p>
+            </div>
+            <div class="w-full h-[60px] flex flex-row">
+              <div
+                class="w-1/3 border-t-2 border-[#EBEAED] rounded-bl-lg"
+              ></div>
+              <div class="w-1/3 border-x-2 border-t-2 border-[#EBEAED]"></div>
+              <div
+                class="w-1/3 border-t-2 border-[#EBEAED] rounded-br-lg"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div
+            class="border-2 border-[#EBEAED] rounded-lg flex flex-col items-center gap-8 pt-10"
+          >
+            <img
+              src="/member3.jpg"
+              alt="Team member image"
+              class="w-30 h-30 rounded-full"
+            />
+            <div>
+              <h3
+                class="font-dm-sans font-medium text-[22px]/[32px] text-[#1E0E62]"
+              >
+                Irea Evans
+              </h3>
+              <p
+                class="font-dm-sans font-bold tracking-[2px] text-base/[26px] text-[#15143966] uppercase pt-3"
+              >
+                Client Manager
+              </p>
+            </div>
+            <div class="w-full h-[60px] flex flex-row">
+              <div
+                class="w-1/3 border-t-2 border-[#EBEAED] rounded-bl-lg"
+              ></div>
+              <div class="w-1/3 border-x-2 border-t-2 border-[#EBEAED]"></div>
+              <div
+                class="w-1/3 border-t-2 border-[#EBEAED] rounded-br-lg"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="px-10 md:px-20 lg:px-[135px] pt-16 md:pt-[142px] bg-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="flex flex-col items-center gap-4">
+          <h5
+            class="font-abel font-normal tracking-[0.45rem] text-sm text-[#8A898E] mb-0.5"
+          >
+            OUR TEAM
+          </h5>
+          <h2
+            class="font-abel font-normal text-2xl md:text-3xl lg:text-4xl xl:text-[52px] text-[#0B1B35] mb-27"
+          >
+            Subscribe Our Newsleter
+          </h2>
+        </div>
+        <div class="flex flex-col md:flex-row gap-12 justify-between">
+          <!-- Left Content -->
+          <div class="rounded-[10px]">
+            <img src="/mail_open.png" alt="mail icon" />
+          </div>
+
+          <!-- Right Content - Abstract Design -->
+          <div class="w-full md:w-[64%] flex flex-col gap-8 ps-4 py-8">
+            <p
+              class="font-roboto font-normal text-sm md:text-lg/[28px] text-[#000000] text-start"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <input
+              type="email"
+              placeholder="Your E-mail here..."
+              class="px-4 lg:px-0 placeholder-indent w-full py-3 border border-[#0000002E] rounded-full shadow-2xl font-roboto font-normal text-lg md:text-2xl"
+            />
+            <div class="pt-2">
+              <button
+                class="w-full bg-[#FF6600] hover:bg-orange-600 text-white py-3 rounded-[10px] transition-colors font-poppins font-medium text-lg"
+              >
+                Subscribe Our Newsletter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="px-10 md:px-20 lg:px-[135px] pt-16 md:pt-[142px] pb-10 bg-white"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 pb-10"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 md:gap-24 items-center md:pe-[90px]"
+          >
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+              <img
+                src="/Logo.svg"
+                alt="Epixelab logo"
+                class="max-h-6 max-w-[111px]"
+              />
+            </div>
+
+            <!-- Copyright -->
+            <p
+              class="font-dm-sans font-normal text-xs md:text-base text-[#1E0E62]"
+            >
+              © 2020 Epixelab. All rights reserved.
+            </p>
+          </div>
+
+          <!-- Footer Links -->
+          <div class="flex items-center space-x-6">
+            <a
+              href="#"
+              class="font-dm-sans font-normal text-xs md:text-base text-[#1E0E62] hover:text-orange-600 transition-colors"
+              >Portfolio</a
+            >
+            <a
+              href="#"
+              class="font-dm-sans font-normal text-xs md:text-base text-[#1E0E62] hover:text-orange-600 transition-colors"
+              >How it Works</a
+            >
+            <a
+              href="#"
+              class="font-dm-sans font-normal text-xs md:text-base text-[#1E0E62] hover:text-orange-600 transition-colors"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="font-dm-sans font-normal text-xs md:text-base text-[#1E0E62] hover:text-orange-600 transition-colors"
+              >About</a
+            >
+            <a
+              href="#"
+              class="font-dm-sans font-normal text-xs md:text-base text-[#1E0E62] hover:text-orange-600 transition-colors"
+              >Login</a
+            >
+          </div>
+        </div>
+        <hr class="border text-[#EBEAED]" />
+        <p
+          class="font-dm-sans font-normal text-xs md:text-base text-[#15143966] transition-colors pt-10"
+        >
+          Startup Framework contains components and complex blocks which can
+          easily be integrated into almost any design.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

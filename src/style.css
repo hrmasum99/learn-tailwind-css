@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange-500: #FF6600;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #f9fafb 0%, #ebf1ff 100%);
+}
+.font-abel {
+  font-family: 'Abel', sans-serif !important;
+}
+.font-roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+.font-dm-sans {
+  font-family: 'DM Sans', sans-serif !important;
+}
+.font-poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+@media screen and (min-width:  1024px) {
+  .placeholder-indent::placeholder {
+    position: relative;
+    left: 67px; /* This will shift the placeholder's position */
+    color: black;
+  }
+}
