@@ -1,4 +1,6 @@
 @import "tailwindcss";
+;
+@tailwind utilities;
 
 @theme {
   --color-orange-500: #FF6600;
